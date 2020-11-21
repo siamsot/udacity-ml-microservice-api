@@ -2,13 +2,15 @@
 
 ## Project Overview
 
-In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API.
+In this project, we operationalize a Machine Learning Microservice API.
 
-You are given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project tests your ability to operationalize a Python flask app—in a provided file, `app.py`—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
+We are given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing).
 
-### Project Tasks
+### Project Overview
 
-Your project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
+Our project goal was to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications.
+
+What we did was:
 * Test your project code using linting
 * Complete a Dockerfile to containerize this application
 * Deploy your containerized application using Docker and make a prediction
@@ -16,10 +18,6 @@ Your project goal is to operationalize this working, machine learning microservi
 * Configure Kubernetes and create a Kubernetes cluster
 * Deploy a container using Kubernetes and make a prediction
 * Upload a complete Github repo with CircleCI to indicate that your code has been tested
-
-You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
-
-**The final implementation of the project will showcase your abilities to operationalize production microservices.**
 
 ---
 
@@ -40,3 +38,13 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+### Files
+
+1. Model data that we need to make the prediction
+2. output_txt_files: The output which we got when we made the calls to the api
+3. Dockerfile: the Dockerfile we used to containerize our application
+4. Makefile: Our Makefile to run all the steps needed in an automated highway
+5. app.py: the code of our app
+6. sh files: The scripts we created to automate commands
+7. requirements.txt: Our requirements txt with all the dependencies needed
